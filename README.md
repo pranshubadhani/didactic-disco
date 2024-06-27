@@ -1,4 +1,3 @@
-
 ## Getting Started
 
 To get started, follow these steps:
@@ -34,7 +33,7 @@ By default, the frontend application will be available at `http://localhost:3000
 1. Navigate to the backend directory:
 
    ```
-   cd../backend
+   cd backend
    ```
 
 2. Install the necessary dependencies:
@@ -46,8 +45,7 @@ By default, the frontend application will be available at `http://localhost:3000
 3. Start the backend server:
 
    ```
-   node index.js
+   npm start
    ```
 
 The backend server will start running, and you can access it via the URLs defined in your application configuration.
-
