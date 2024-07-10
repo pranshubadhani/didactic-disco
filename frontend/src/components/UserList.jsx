@@ -12,7 +12,7 @@ const UserList = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/api/users')
+        fetch('https://didactic-disco-backend.vercel.app/api/users')
             .then((response) => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();

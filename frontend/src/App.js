@@ -11,7 +11,7 @@ function App() {
   const users = useSelector((state) => state.users);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/users')
+    fetch('https://didactic-disco-backend.vercel.app/api/users')
       .then((response) => response.json())
       .then((data) => dispatch(setUserList(data)))
       .catch((error) => console.error("Failed to fetch users:", error));
