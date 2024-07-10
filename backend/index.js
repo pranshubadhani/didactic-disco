@@ -33,7 +33,9 @@ let users = [
     }
 ];
 
-
+app.use("/", (req, res) => {
+    res.send("Server running...");
+})
 
 app.post('/api/signup', (req, res) => {
     const { name, email, password } = req.body;
