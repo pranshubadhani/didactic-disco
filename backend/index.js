@@ -33,9 +33,7 @@ let users = [
     }
 ];
 
-app.use("/", (req, res) => {
-    res.send("Server running...");
-})
+
 
 app.post('/api/signup', (req, res) => {
     const { name, email, password } = req.body;
@@ -47,6 +45,9 @@ app.get('/api/users', (req, res) => {
     res.status(200).json(users); // Send the in-memory users array
 });
 
+app.get("/", (req, res) => {
+    res.send("Server running...");
+})
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
