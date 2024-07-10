@@ -36,6 +36,7 @@ const SignupForm = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 style={{ padding: '10px', fontSize: '16px', borderRadius: '5px', border: '1px solid #ccc' }}
+                required
             />
             <label htmlFor="email" style={{ marginBottom: '5px' }}>Email:</label>
             <input
@@ -45,6 +46,7 @@ const SignupForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={{ padding: '10px', fontSize: '16px', borderRadius: '5px', border: '1px solid #ccc' }}
+                required
             />
             <label htmlFor="password" style={{ marginBottom: '5px' }}>Password:</label>
             <input
@@ -54,6 +56,7 @@ const SignupForm = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 style={{ padding: '10px', fontSize: '16px', borderRadius: '5px', border: '1px solid #ccc' }}
+                required
             />
             <button type="submit" style={{ padding: '10px 20px', fontSize: '16px', backgroundColor: '#007bff', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
                 Sign Up

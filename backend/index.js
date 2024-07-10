@@ -30,6 +30,12 @@ let users = [
         name: 'Bob Brown',
         email: 'bob.brown@example.com',
         password: 'finalSecurePassword101112'
+    },
+    {
+        id: 5,
+        name: 'Pranshu Badhani',
+        email: 'pranshu.badhani@example.com',
+        password: 'password34234'
     }
 ];
 
